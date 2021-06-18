@@ -1,11 +1,30 @@
-name: 'Your name here'
-description: 'Provide a description here'
-author: 'Your name or organization here'
+name: 'cache-repo-s3'
+description: 'Cache git repo to S3 and fetch cache from S3'
+author: 'Comtravo GmbH'
 inputs:
-  milliseconds: # change this
+  s3Bucket:
     required: true
-    description: 'input description here'
-    default: 'default value if applicable'
+    description: 'S3 bucket to cache to'
+  removeGitDir:
+    required: false
+    description: 'remove .git folder before caching'
+    default: 'false'
+  quiet:
+    required: false
+    description: 'silence zip logs'
+    default: 'true'
+  operation:
+    required: true
+    description: 'Cache repo or fetch repo'
+    default: 'cache'
+  treeHash:
+    required: false
+    description: 'tree hash when fetching repo from S3'
+    default: 'cache'
+outputs:
+  treeHash:
+    description: The tree hash of the repo that was cached.
+
 runs:
   using: 'node12'
   main: 'dist/index.js'
