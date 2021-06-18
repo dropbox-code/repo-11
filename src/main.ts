@@ -45,16 +45,15 @@ async function isObjectPresent(bucket: string, hash: string): Promise<boolean> {
 
   core.info(`Checking if ${key} is present in ${bucket}`)
 
-  core.info('checking if ')
   try {
-    await awsS3Client
+    const res = await awsS3Client
       .headObject({
         Bucket: bucket,
         Key: key
       })
       .promise()
 
-    core.info(`${key} is present in ${bucket}`)
+    core.info(`headObject response: ${res}`)
     return true
   } catch (err) {
     core.info(`${key} is not present in ${bucket}`)
