@@ -53,7 +53,7 @@ async function isObjectPresent(bucket: string, hash: string): Promise<boolean> {
       })
       .promise()
 
-    core.info(`headObject response: ${res}`)
+    core.info(`headObject response: ${JSON.stringify(res)}`)
     return true
   } catch (err) {
     core.info(`${key} is not present in ${bucket}`)
