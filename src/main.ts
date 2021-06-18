@@ -85,6 +85,9 @@ async function cacheRepo(
   core.info(`Caching repo in S3: ${s3Bucket}`)
 
   const treeHash = await getGitTreeHash()
+
+  core.setOutput('treeHash', treeHash)
+
   const objectPresent = await isObjectPresent(s3Bucket, treeHash)
 
   if (objectPresent) {
@@ -94,8 +97,6 @@ async function cacheRepo(
 
   await zipSourceCode(removeGitDir, quiet)
   await putObjectToS3(s3Bucket, treeHash)
-
-  core.setOutput('treeHash', treeHash)
 }
 
 async function fetchRepo(s3Bucket: string, quiet: boolean): Promise<void> {
