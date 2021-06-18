@@ -85,7 +85,7 @@ async function cacheRepo(
   core.info(`Caching repo in S3: ${s3Bucket}`)
 
   const treeHash = await getGitTreeHash()
-  const objectPresent = isObjectPresent(s3Bucket, treeHash)
+  const objectPresent = await isObjectPresent(s3Bucket, treeHash)
 
   if (objectPresent) {
     core.info(`Repo with tree hash: ${treeHash} has been already cached in S3`)
