@@ -20,7 +20,7 @@ inputs:
   treeHash:
     required: false
     description: 'tree hash when fetching repo from S3'
-    default: 'cache'
+    default: ''
 outputs:
   treeHash:
     description: The tree hash of the repo that was cached.
