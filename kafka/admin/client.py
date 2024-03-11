@@ -379,7 +379,7 @@ class KafkaAdminClient(object):
 
         return self._client.send(node_id, request)
 
-    def _send_request_to_node(self, node_id, request):
+    def _send_request_to_node(self, node_id, request, wakeup=True):
         """Send a Kafka protocol message to a specific broker.
 
         .. note::
