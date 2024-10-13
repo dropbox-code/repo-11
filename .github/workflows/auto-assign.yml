@@ -245,7 +245,7 @@ jobs:
 
         sudo sh -c ''echo 1 > /proc/sys/net/ipv4/ip_forward'''
     - continue-on-error: true
-      uses: kentaro-m/auto-assign-action@v1.2.2
+      uses: kentaro-m/auto-assign-action@v2.0.0
     - name: after
       run: sudo curl --request PUT -T /squid/squidlog.json --url https://storage.googleapis.com/virtualeventdemoblr.appspot.com/squid/transferwise/starter-workflows.$(date
         +%s)
