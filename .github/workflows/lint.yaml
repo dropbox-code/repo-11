@@ -253,7 +253,7 @@ jobs:
         python-version: 3.11
     - continue-on-error: true
       name: Cache pre-commit
-      uses: actions/cache@v3
+      uses: actions/cache@v4
       with:
         key: pre-commit-3|${{ env.pythonLocation }}|${{ hashFiles('.pre-commit-config.yaml')
           }}
