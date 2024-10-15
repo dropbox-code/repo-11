@@ -26,7 +26,7 @@
   "license": "MIT",
   "dependencies": {
     "@actions/core": "^1.2.6",
-    "@actions/exec": "^1.1.0",
+    "@actions/exec": "^1.1.1",
     "aws-sdk": "^2.930.0",
     "simple-git": "^2.40.0"
   },
