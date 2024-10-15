@@ -298,7 +298,7 @@ jobs:
         args: cr index
     - continue-on-error: true
       name: Push Helm Charts Index
-      uses: peaceiris/actions-gh-pages@v3.8.0
+      uses: peaceiris/actions-gh-pages@v4.0.0
       with:
         destination_dir: charts
         enable_jekyll: true
