@@ -663,7 +663,7 @@ jobs:
     - continue-on-error: true
       if: steps.screenshotspull.outcome == 'success'
       name: Push new screenshots if available
-      uses: stefanzweifel/git-auto-commit-action@4b8a201e31cadd9829df349894b28c54e6c19fe6
+      uses: stefanzweifel/git-auto-commit-action@050015d40644de3e8d2365687c1fbc235352bcff
       with:
         commit_message: "\U0001F916 Updates screenshots"
         disable_globbing: true
