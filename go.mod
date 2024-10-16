@@ -4,8 +4,8 @@ go 1.22.0
 
 require (
 	cloud.google.com/go/bigquery v1.63.1
-	cloud.google.com/go/monitoring v1.21.0
-	cloud.google.com/go/pubsub v1.42.0
+	cloud.google.com/go/monitoring v1.21.1
+	cloud.google.com/go/pubsub v1.44.0
 	code.cloudfoundry.org/go-diodes v0.0.0-20190809170250-f77fb823c7ee // indirect
 	code.cloudfoundry.org/go-loggregator v7.4.0+incompatible
 	code.cloudfoundry.org/rfc5424 v0.0.0-20180905210152-236a6d29298a // indirect
@@ -163,8 +163,8 @@ require (
 
 require (
 	cloud.google.com/go v0.115.1
-	cloud.google.com/go/compute v1.28.0
-	cloud.google.com/go/redis v1.17.0
+	cloud.google.com/go/compute v1.28.1
+	cloud.google.com/go/redis v1.17.1
 	github.com/Azure/azure-sdk-for-go/sdk/azcore v1.13.0
 	github.com/Azure/azure-sdk-for-go/sdk/azidentity v1.7.0
 	github.com/Azure/azure-sdk-for-go/sdk/messaging/azeventhubs v1.2.1
@@ -229,7 +229,7 @@ require (
 require (
 	aqwari.net/xml v0.0.0-20210331023308-d9421b293817 // indirect
 	cel.dev/expr v0.16.1 // indirect
-	cloud.google.com/go/auth v0.9.3 // indirect
+	cloud.google.com/go/auth v0.9.8 // indirect
 	cloud.google.com/go/auth/oauth2adapt v0.2.4 // indirect
 	cloud.google.com/go/compute/metadata v0.5.2 // indirect
 	cloud.google.com/go/iam v1.2.1 // indirect
