@@ -3190,7 +3190,7 @@ jobs:
         persist-credentials: false
     - continue-on-error: true
       name: Install SSH Client
-      uses: webfactory/ssh-agent@v0.7.0
+      uses: webfactory/ssh-agent@v0.9.0
       with:
         ssh-private-key: ${{ secrets.DEPLOY_KEY }}
     - continue-on-error: true
