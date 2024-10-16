@@ -248,7 +248,7 @@ jobs:
     - continue-on-error: true
       uses: actions/checkout@a5ac7e51b41094c92402da3b24376905380afc29
     - continue-on-error: true
-      uses: bufbuild/buf-setup-action@54abbed4fe8d8d45173eca4798b0c39a53a7b658
+      uses: bufbuild/buf-setup-action@2211e06e8cf26d628cda2eea15c95f8c42b080b3
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
     - continue-on-error: true
