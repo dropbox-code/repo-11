@@ -252,7 +252,7 @@ jobs:
         'I have read the CLA Document and I sign the CLA') || github.event_name ==
         'pull_request_target'
       name: CLA Assistant
-      uses: contributor-assistant/github-action@v2.3.0
+      uses: contributor-assistant/github-action@v2.6.1
       with:
         allowlist: dependabot[bot],github-actions,[pre-commit*,pre-commit*,bot*
         branch: main
