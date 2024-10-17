@@ -254,7 +254,7 @@ jobs:
     - continue-on-error: true
       id: app_name
       name: "\U0001F440 Read app name"
-      uses: SebRollen/toml-action@v1.0.0
+      uses: SebRollen/toml-action@v1.2.0
       with:
         field: app
         file: fly.toml
@@ -844,7 +844,7 @@ jobs:
     - continue-on-error: true
       id: app_name
       name: "\U0001F440 Read app name"
-      uses: SebRollen/toml-action@v1.0.0
+      uses: SebRollen/toml-action@v1.2.0
       with:
         field: app
         file: fly.toml
