@@ -29,7 +29,7 @@
     "@typescript-eslint/eslint-plugin": "^5.27.1",
     "@typescript-eslint/parser": "^5.27.1",
     "eslint": "^8.17.0",
-    "eslint-plugin-simple-import-sort": "^7.0.0",
+    "eslint-plugin-simple-import-sort": "^12.1.1",
     "husky": "^8.0.1",
     "jest": "^27.4.7",
     "jest-extended": "^1.2.0",
