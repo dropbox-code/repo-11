@@ -578,7 +578,7 @@ jobs:
       env:
         PORT: '8811'
       name: "\U0001F333 Cypress run"
-      uses: cypress-io/github-action@v4
+      uses: cypress-io/github-action@v6
       with:
         start: npm run start:mocks
         wait-on: http://localhost:8811
