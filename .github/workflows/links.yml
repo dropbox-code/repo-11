@@ -261,7 +261,7 @@ jobs:
         '
     - continue-on-error: true
       name: Test Markdown and HTML links with retry
-      uses: nick-invision/retry@v2
+      uses: nick-invision/retry@v3
       with:
         command: lychee --accept 429,999 --exclude-loopback --exclude 'https?://(www\.)?(twitter\.com|instagram\.com)'
           --exclude-path '**/ci.yaml' --exclude-mail --github-token ${{ secrets.GITHUB_TOKEN
@@ -272,7 +272,7 @@ jobs:
     - continue-on-error: true
       if: github.event_name == 'workflow_dispatch'
       name: Test Markdown, HTML, YAML, Python and Notebook links with retry
-      uses: nick-invision/retry@v2
+      uses: nick-invision/retry@v3
       with:
         command: lychee --accept 429,999 --exclude-loopback --exclude 'https?://(www\.)?(twitter\.com|instagram\.com|url\.com)'
           --exclude-path '**/ci.yaml' --exclude-mail --github-token ${{ secrets.GITHUB_TOKEN
