@@ -279,7 +279,7 @@ jobs:
         username: x
     - continue-on-error: true
       name: "\U0001F433 Docker build"
-      uses: docker/build-push-action@v3
+      uses: docker/build-push-action@v6
       with:
         build-args: 'COMMIT_SHA=${{ github.sha }}
 
