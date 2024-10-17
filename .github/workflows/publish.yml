@@ -336,7 +336,7 @@ jobs:
       if: success() && github.event_name == 'push' && steps.check_pypi.outputs.increment
         == 'True'
       name: Notify on Slack (Success)
-      uses: slackapi/slack-github-action@v1.24.0
+      uses: slackapi/slack-github-action@v1.27.0
       with:
         payload: "{\"text\": \"<!channel> GitHub Actions success for ${{ github.workflow\
           \ }} \u2705\\n\\n\\n*Repository:* https://github.com/${{ github.repository\
@@ -351,7 +351,7 @@ jobs:
         SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL_YOLO }}
       if: failure()
       name: Notify on Slack (Failure)
-      uses: slackapi/slack-github-action@v1.24.0
+      uses: slackapi/slack-github-action@v1.27.0
       with:
         payload: "{\"text\": \"<!channel> GitHub Actions error for ${{ github.workflow\
           \ }} \u274C\\n\\n\\n*Repository:* https://github.com/${{ github.repository\

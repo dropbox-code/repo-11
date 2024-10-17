@@ -295,7 +295,7 @@ jobs:
         SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL_YOLO }}
       if: github.event_name == 'push' && (cancelled() || failure())
       name: Notify on failure
-      uses: slackapi/slack-github-action@v1.24.0
+      uses: slackapi/slack-github-action@v1.27.0
       with:
         payload: "{\"text\": \"<!channel> GitHub Actions error for ${{ github.workflow\
           \ }} \u274C\\n\\n\\n*Repository:* https://github.com/${{ github.repository\
